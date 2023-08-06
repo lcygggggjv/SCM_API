@@ -26,7 +26,7 @@ class EnvironMent:
     @staticmethod
     def get_env_url():
 
-        return "https://" + env + ".tele" + "tr" + "aan.io"
+        return "https://" + env + ".tele" + "tr" + "aan.io" + "/gra" + "phql/?"
 
     @staticmethod
     def account():

@@ -1,5 +1,26 @@
 
-# 新增，编辑，删除物料用例
+# 新增，编辑，删除物料用例. 多个用例 --- 分割
+
+# 新增成功
 
 data:
-  
+  code: "code"
+  category_id: "category_id"
+  type_text: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "data"
+
+---
+
+# code为空
+data:
+  code: ""
+  name: "name"
+  category_id: "category_id"
+  type_text: "type_text"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "data"

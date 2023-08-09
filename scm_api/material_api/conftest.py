@@ -7,15 +7,13 @@ def get_token():
 
     api = Api()
     token = api.login_token()
-    print(1)
+
     yield token
 
 
 def test_get_data(get_token):
 
     print(get_token)
-
-
 
 
 # @pytest.fixture()

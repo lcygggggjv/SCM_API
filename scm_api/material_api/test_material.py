@@ -9,7 +9,8 @@ class TestMaterial(Api):
     env = EnvironMent()
     url = env.get_env_url()
 
-    def test_create_material(self, ):
+    def test_create_material(self, get_token):
 
         res = requests.post(url=self.url + 'createScmMaterial',
-                            headers={"Authorization": f"bearer {token}"})
+                            headers={"Authorization": f"bearer {get_token}"})
+        

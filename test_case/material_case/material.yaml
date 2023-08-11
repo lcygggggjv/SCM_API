@@ -14,10 +14,9 @@ expected: "data"
 
 ---
 
-# code为空
+# code为空, 预期应该是error，后端没限制
 data:
   code: ""
-  name: "name"
   category_id: "category_id"
   type_text: "type_text"
   unit_id: "unit_id"

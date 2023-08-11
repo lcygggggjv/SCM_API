@@ -1,0 +1,4 @@
+2023-08-11 20:52:50.812 | ERROR    | scm_api.material_api.test_material:test_create_material:61 - 预期结果：data, 不符合实际结果:{'createScmMaterial': 'fa6d662b-49be-496f-b3b6-ce8ab619bfe8'}
+2023-08-11 20:52:53.817 | ERROR    | scm_api.material_api.test_material:test_create_material:61 - 预期结果：data, 不符合实际结果:{'createScmMaterial': '9c0f9003-38e9-418d-b736-5474f8487abc'}
+2023-08-11 21:09:07.582 | INFO     | scm_api.material_api.test_material:test_create_material:65 - 预期结果：data, 符合实际结果:{'data': {'createScmMaterial': 'ba52a6c7-61f8-4daa-b9aa-6228726fdb41'}}
+2023-08-11 21:09:11.551 | INFO     | scm_api.material_api.test_material:test_create_material:65 - 预期结果：data, 符合实际结果:{'data': {'createScmMaterial': '1af54a1b-3b56-4506-abf1-7924bb2e3133'}}

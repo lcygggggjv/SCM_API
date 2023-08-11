@@ -1,6 +1,8 @@
 import os.path
 import pathlib
 
+from pymysql.cursors import DictCursor
+
 
 class FilePath:
 
@@ -14,6 +16,26 @@ class FilePath:
     log_path = root_path / 'log' / 'test_log'   # 日志文件路径
 
     material_path = root_path / 'test_case' / 'material_case' / 'material.yaml'
+
+    postgres_db = dict(
+                       user='postgres',
+                       password='postgres',
+                       host='192.168.1.128',
+                       port=30001,
+                       database='test2_eam')
+
+    tc_db = dict(user='postgres',
+                 password='postgres',
+                 host='192.168.1.128',
+                 port=30001,
+                 db='test2_eam')
+
+    db = dict(user='lemon',
+              password='lemon123',
+              host='47.113.180.81',
+              port=3306,
+              cursorclass=DictCursor,   # 导入dictCursor类  得到字典
+              db='yami_shops')
 
 
 if __name__ == '__main__':

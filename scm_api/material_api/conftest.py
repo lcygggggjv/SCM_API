@@ -11,6 +11,17 @@ def get_token():
     yield token
 
 
+@pytest.fixture()
+def get_data():
+
+    api = Api()
+    cate_id = api.get_category()
+    unit_id = api.get_unit()
+    signal = api.get_signal()
+
+    yield cate_id, unit_id, signal
+
+
 def test_get_data(get_token):
 
     print(get_token)

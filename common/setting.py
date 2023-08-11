@@ -61,8 +61,8 @@ class ConnectPostgres:
                                      database=database)
 
     def query_all(self, sql):
-        """首先实例属性conn连接数据库，获取游标对象，,
-        使用execute方法传入sql，再使用cursor，fetchall获取全部数据，并关闭游标,关闭连接数据库
+        """首先实例属性conn连接数据库对象，获取游标对象，,
+        使用execute方法传入sql，再使用cursor.fetchall获取全部数据，commit提交事务，并关闭游标,关闭连接数据库
         """
         cursor = self.conn.cursor()
 

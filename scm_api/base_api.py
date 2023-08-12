@@ -3,7 +3,7 @@ import yaml
 import requests
 from config.read_env import EnvironMent
 from config.file_path import FilePath
-
+from common.setting import logger
 
 class Api:
 
@@ -44,6 +44,17 @@ class Api:
             actual = actual["error"]["errors"][0]["message"]
 
         return actual
+
+    @staticmethod
+    def assert_actual(expected, actual):
+
+        try:
+            assert expected in actual
+
+            logger.info(f"预期结果：{expected}, 符合实际结果:{actual}")
+        except AssertionError:
+            logger.info(f"预期结果：{expected}, 不符合实际结果:{actual}")
+            raise AssertionError(f"预期结果：{expected} 不符合实际结果：{actual}")
 
     @classmethod
     def read_yaml(cls, yaml_path):

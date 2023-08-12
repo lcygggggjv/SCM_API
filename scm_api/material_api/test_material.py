@@ -22,13 +22,27 @@ class TestMaterial(Api):
     @pytest.mark.parametrize("case", cases)
     def test_create_material(self, get_token, case, get_data):
         """新增物料通用数据"""
+        # 定义为局部变量
+        category_id, unit_id, signal_id = None, None, None
 
         if case['data']['category_id'] == 'category_id':
-            case['data']['category_id'] = get_data[0]
+            category_id = get_data[0]
         if case['data']['unit_id'] == 'unit_id':
-            case['data']['unit_id'] = get_data[1]
+            unit_id = get_data[1]
         if case['data']['signal_id'] == 'signal_id':
-            case['data']['signal_id'] = get_data[2]
+            signal_id = get_data[2]
+
+        if case["data"]["code"] == 'code':
+            code = self.mock.ran_py_str()
+        else:
+            code = case["data"]["code"]
+
+        if case["data"]["name"] == "name":
+            name = self.mock.ran_py_str()
+        else:
+            name = case["data"]["name"]
+
+        logger.info(category_id, signal_id, unit_id, code, name)   # 查看判断后的日志
 
         res = requests.post(url=self.url + 'createScmMaterial',
                             headers={"Authorization": f"bearer {get_token}"},
@@ -37,20 +51,20 @@ class TestMaterial(Api):
                               "variables": {
                                 "input": {
                                   "category": {
-                                    "id": case['data']['category_id']
+                                    "id": category_id
                                   },
                                   "figureNo": self.mock.ran_py_str(),
                                   "inventoryUnit": {
-                                    "id": case['data']['unit_id']
+                                    "id": unit_id
                                   },
                                   "materialQuality": self.mock.ran_py_str(),
                                   "materialSignal": {
-                                    "id": case['data']['signal_id']
+                                    "id": signal_id
                                   },
-                                  "materialType": "PURCHASE",
+                                  "materialType": case["data"]["material_type"],
                                   "model": self.mock.ran_py_str(),
-                                  "name": self.mock.ran_py_str(),
-                                  "no": self.mock.ran_py_str(),
+                                  "name": name,
+                                  "no": code,
                                   "specification": self.mock.ran_py_str()
                                 }
                               },
@@ -58,10 +72,8 @@ class TestMaterial(Api):
                                        "{\n  createScmMaterial(input: $input)\n}"
                             })
 
-        actual = res.json()
+        res = res.json()
         expected = case['expected']
 
-        if expected in actual:
-            logger.info(f"预期结果：{expected}, 符合实际结果:{actual}")
-        else:
-            logger.info(f"预期结果：{expected}, 不符合实际结果:{actual}")
+        actual = self.review_actual(res)
+        self.assert_actual(expected, actual)

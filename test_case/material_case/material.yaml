@@ -5,21 +5,36 @@
 
 data:
   code: "code"
+  name: 'name'
   category_id: "category_id"
-  type_text: "PURCHASE"
+  material_type: "PURCHASE"
   unit_id: "unit_id"
   signal_id: "signal_id"
 
-expected: "data"
+expected: "createScmMaterial"
 
 ---
 
 # code为空, 预期应该是error，后端没限制
 data:
   code: ""
+  name: 'name'
   category_id: "category_id"
-  type_text: "type_text"
+  material_type: "PURCHASE"
   unit_id: "unit_id"
   signal_id: "signal_id"
 
-expected: "data"
+expected: "createScmMaterial"
+
+---
+
+# name为空, 预期应该是error，后端没限制
+data:
+  code: 'code'
+  name: ""
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "createScmMaterial"

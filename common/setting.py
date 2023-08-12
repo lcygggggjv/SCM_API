@@ -84,15 +84,15 @@ class ConnectPostgres:
         return result
 
 
-if __name__ == '__main__':
-
-    con = ConnectMysql(**FilePath.db)
-    res = con.query_one('select user_id, mobile_code from tz_sms_log limit 5')
-
-    # conn = ConnectPostgres(db='test2_eam.public', user='postgres', password='postgres',
-    # port=30001,host='192.168.1.128')
-
-    # conn = ConnectPostgres(**FilePath.tc_db)
-    # res = conn.query_one("select id, name from thing where code='931929'")
-
-    print(res)
+# if __name__ == '__main__':
+#
+#     con = ConnectMysql(**FilePath.db)
+#     res = con.query_one('select user_id, mobile_code from tz_sms_log limit 5')
+#
+#     # conn = ConnectPostgres(db='test2_eam.public', user='postgres', password='postgres',
+#     # port=30001,host='192.168.1.128')
+#
+#     # conn = ConnectPostgres(**FilePath.tc_db)
+#     # res = conn.query_one("select id, name from thing where code='931929'")
+#
+#     print(res)

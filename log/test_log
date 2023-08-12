@@ -2,3 +2,36 @@
 2023-08-11 20:52:53.817 | ERROR    | scm_api.material_api.test_material:test_create_material:61 - 预期结果：data, 不符合实际结果:{'createScmMaterial': '9c0f9003-38e9-418d-b736-5474f8487abc'}
 2023-08-11 21:09:07.582 | INFO     | scm_api.material_api.test_material:test_create_material:65 - 预期结果：data, 符合实际结果:{'data': {'createScmMaterial': 'ba52a6c7-61f8-4daa-b9aa-6228726fdb41'}}
 2023-08-11 21:09:11.551 | INFO     | scm_api.material_api.test_material:test_create_material:65 - 预期结果：data, 符合实际结果:{'data': {'createScmMaterial': '1af54a1b-3b56-4506-abf1-7924bb2e3133'}}
+2023-08-12 22:34:04.486 | INFO     | scm_api.base_api:assert_actual:53 - 预期结果：data, 符合实际结果:{'data': {'createScmMaterial': 'f523f078-c9b9-4eb1-82ae-fdb582c55b64'}}
+2023-08-12 22:34:07.266 | INFO     | scm_api.base_api:assert_actual:53 - 预期结果：data, 符合实际结果:{'data': {'createScmMaterial': '77d6c2ac-66ba-4264-82a5-ee6a757b5910'}}
+2023-08-12 22:34:10.094 | INFO     | scm_api.base_api:assert_actual:53 - 预期结果：data, 符合实际结果:{'data': {'createScmMaterial': '9bd962d0-43e7-48b9-b6a1-9195db665625'}}
+2023-08-12 22:37:30.817 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-12 22:37:31.433 | INFO     | scm_api.base_api:assert_actual:53 - 预期结果：data, 符合实际结果:{'data': {'createScmMaterial': '956402cb-ed9f-4cd1-9d16-b99e86c8987a'}}
+2023-08-12 22:37:38.807 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-12 22:37:39.446 | INFO     | scm_api.base_api:assert_actual:53 - 预期结果：data, 符合实际结果:{'data': {'createScmMaterial': 'd234cdbb-39dd-4af3-8705-95db6491a610'}}
+2023-08-12 22:37:41.975 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-12 22:37:43.260 | INFO     | scm_api.base_api:assert_actual:53 - 预期结果：data, 符合实际结果:{'errors': [{'message': '物料编码已存在，请重新输入', 'extensions': {'code': 'MATERIAL_NO_IS_EXIST', 'serviceName': 'scm-be', 'status': 400, 'detail': '物料编码已存在，请重新输入', 'data': {}, 'exception': {'message': '物料编码已存在，请重新输入', 'locations': [{'line': 1, 'column': 71}], 'path': ['createScmMaterial'], 'stacktrace': ['GraphQLError: 物料编码已存在，请重新输入', '    at downstreamServiceError (/index.js:15276:12)', '    at /index.js:15159:59', '    at Array.map (<anonymous>)', '    at sendOperation (/index.js:15159:44)', '    at runMicrotasks (<anonymous>)', '    at processTicksAndRejections (node:internal/process/task_queues:96:5)', '    at async /index.js:15088:49', '    at async executeNode (/index.js:15051:17)', '    at async /index.js:14951:35', '    at async /index.js:15411:38']}}}], 'data': None}
+2023-08-12 23:02:17.977 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-12 23:02:18.570 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：data, 不符合实际结果:{'createScmMaterial': 'b84bd4f0-98eb-4a80-aa30-9db3b8986aa0'}
+2023-08-12 23:02:20.789 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-12 23:02:21.386 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：data, 不符合实际结果:{'createScmMaterial': 'c4ba3980-842a-4681-b969-bbfed4995a10'}
+2023-08-12 23:02:23.634 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-12 23:02:24.259 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：data, 不符合实际结果:{'createScmMaterial': '0ba8a302-e3ef-42c3-96d2-c93516cb65d7'}
+2023-08-12 23:07:44.298 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-12 23:07:44.914 | INFO     | scm_api.base_api:assert_actual:56 - 预期结果：createScmMaterial, 不符合实际结果:物料编码已存在，请重新输入
+2023-08-12 23:07:47.289 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-12 23:07:47.924 | INFO     | scm_api.base_api:assert_actual:54 - 预期结果：createScmMaterial, 符合实际结果:{'createScmMaterial': '3b8d9a12-4890-41cb-9a7e-9742e350e1a4'}
+2023-08-12 23:07:50.141 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-12 23:07:51.757 | INFO     | scm_api.base_api:assert_actual:56 - 预期结果：data, 不符合实际结果:{'createScmMaterial': 'b6573157-c0bd-47e2-a54f-ea6d4d3a9e1a'}
+2023-08-12 23:18:43.274 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-12 23:18:43.940 | INFO     | scm_api.base_api:assert_actual:54 - 预期结果：createScmMaterial, 符合实际结果:{'createScmMaterial': '78115a5b-c297-4d9e-a699-bc0c7aaaef51'}
+2023-08-12 23:18:47.118 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-12 23:18:47.747 | INFO     | scm_api.base_api:assert_actual:54 - 预期结果：createScmMaterial, 符合实际结果:{'createScmMaterial': '01ea0a17-de4f-4a3e-b59a-3e78624aa778'}
+2023-08-12 23:18:50.473 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-12 23:18:51.211 | INFO     | scm_api.base_api:assert_actual:56 - 预期结果：errors, 不符合实际结果:{'createScmMaterial': '0abe75d3-d2db-466e-9579-cf09208bf5a3'}
+2023-08-12 23:19:22.828 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-12 23:19:23.440 | INFO     | scm_api.base_api:assert_actual:54 - 预期结果：createScmMaterial, 符合实际结果:{'createScmMaterial': 'b853e677-3a0c-4115-8f5c-a41be349d530'}
+2023-08-12 23:19:26.033 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-12 23:19:26.705 | INFO     | scm_api.base_api:assert_actual:56 - 预期结果：createScmMaterial, 不符合实际结果:物料编码已存在，请重新输入
+2023-08-12 23:19:30.523 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-12 23:19:31.134 | INFO     | scm_api.base_api:assert_actual:54 - 预期结果：createScmMaterial, 符合实际结果:{'createScmMaterial': '0d00aa11-5dde-4b8a-a529-5883f500194b'}

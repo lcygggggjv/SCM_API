@@ -38,3 +38,16 @@ data:
   signal_id: "signal_id"
 
 expected: "createScmMaterial"
+
+---
+
+#
+data:
+  code: 'asvdqwe4555623566777762'
+  name: "name"
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "createScmMaterial"

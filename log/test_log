@@ -35,3 +35,126 @@
 2023-08-12 23:19:26.705 | INFO     | scm_api.base_api:assert_actual:56 - 预期结果：createScmMaterial, 不符合实际结果:物料编码已存在，请重新输入
 2023-08-12 23:19:30.523 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
 2023-08-12 23:19:31.134 | INFO     | scm_api.base_api:assert_actual:54 - 预期结果：createScmMaterial, 符合实际结果:{'createScmMaterial': '0d00aa11-5dde-4b8a-a529-5883f500194b'}
+2023-08-14 21:21:21.206 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:21:21.870 | INFO     | scm_api.base_api:assert_actual:54 - 预期结果：createScmMaterial, 符合实际结果:{'createScmMaterial': '62fcf76c-fb66-4443-bb82-d13cb5369e18'}
+2023-08-14 21:21:24.215 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:21:24.825 | INFO     | scm_api.base_api:assert_actual:56 - 预期结果：error, 不符合实际结果:物料编码已存在，请重新输入
+2023-08-14 21:21:27.416 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:21:28.140 | INFO     | scm_api.base_api:assert_actual:56 - 预期结果：error, 不符合实际结果:{'createScmMaterial': '7026d81c-f83a-415f-99f4-1acc8082ab79'}
+2023-08-14 21:21:30.537 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:21:31.173 | INFO     | scm_api.base_api:assert_actual:56 - 预期结果：error, 不符合实际结果:{'createScmMaterial': '1d61dc43-8d71-45c9-9e70-174c65f91112'}
+2023-08-14 21:21:33.469 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:21:34.093 | INFO     | scm_api.base_api:assert_actual:56 - 预期结果：error, 不符合实际结果:{'createScmMaterial': 'daf07078-68cb-4c9c-aa7a-ceac7b79c960'}
+2023-08-14 21:21:36.350 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:21:36.988 | INFO     | scm_api.base_api:assert_actual:56 - 预期结果：error, 不符合实际结果:Variable "$input" got invalid value "" at "input.materialType"; Value "" does not exist in "ScmMaterialType" enum.
+2023-08-14 21:21:39.378 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:21:39.968 | INFO     | scm_api.base_api:assert_actual:56 - 预期结果：error, 不符合实际结果:Variable "$input" got invalid value "xxxx" at "input.materialType"; Value "xxxx" does not exist in "ScmMaterialType" enum.
+2023-08-14 21:21:42.274 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:21:42.883 | INFO     | scm_api.base_api:assert_actual:56 - 预期结果：error, 不符合实际结果:Variable "$input" got invalid value { xxx: 2 } at "input.materialType"; Enum "ScmMaterialType" cannot represent non-string value: { xxx: 2 }.
+2023-08-14 21:32:17.744 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:32:18.402 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：createScmMaterial, 符合实际结果:{'createScmMaterial': '22e7bde4-6539-4edf-97c1-eae8089c2783'}
+2023-08-14 21:32:20.617 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:32:24.338 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:32:27.612 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:32:30.547 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:32:31.214 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：error, 不符合实际结果:{'createScmMaterial': '895dc612-5280-40dc-b872-b1a7c103961e'}
+2023-08-14 21:32:33.740 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:32:36.821 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:32:41.541 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:33:47.846 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:33:49.374 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：createScmMaterial, 符合实际结果:{'createScmMaterial': '02f52900-527d-4ce7-814d-fe1fc3a2f2f5'}
+2023-08-14 21:33:52.743 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:33:55.827 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:33:56.551 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：error, 不符合实际结果:{'createScmMaterial': '8e0f60cb-0153-4f2f-9c72-24e45e4cdede'}
+2023-08-14 21:33:59.982 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:34:04.221 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:34:04.885 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：error, 不符合实际结果:{'createScmMaterial': '6698d35d-fc19-48c4-b9ec-74113a64e2b6'}
+2023-08-14 21:34:07.567 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:34:10.667 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:34:13.628 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:34:56.681 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:34:57.337 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：createScmMaterial, 符合实际结果:{'createScmMaterial': '1873b270-def0-4e61-b73e-013752e182a3'}
+2023-08-14 21:34:59.751 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:35:00.518 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：error, 不符合实际结果:MATERIAL_NO_IS_EXIST
+2023-08-14 21:35:03.094 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:35:03.808 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：error, 不符合实际结果:{'createScmMaterial': '32602709-e13e-4d3b-8aa8-0cad4065bd8c'}
+2023-08-14 21:35:06.477 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:35:07.166 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：error, 不符合实际结果:MATERIAL_NO_IS_EXIST
+2023-08-14 21:35:09.964 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:35:10.631 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：error, 不符合实际结果:{'createScmMaterial': '944295b6-242f-4050-b932-7bcbc2f194d8'}
+2023-08-14 21:35:13.467 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:35:14.199 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 21:35:19.025 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:35:19.647 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 21:35:21.929 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 21:35:22.534 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:18:57.002 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:18:57.651 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：createScmMaterial, 符合实际结果:{'createScmMaterial': 'a3cfc742-c72d-41b6-bc1e-a8500f433b88'}
+2023-08-14 22:19:00.887 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:19:01.501 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：error, 不符合实际结果:{'createScmMaterial': '4905a318-f1bb-4191-b727-e609f333bc83'}
+2023-08-14 22:19:13.336 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:19:16.260 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:19:22.413 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:19:24.083 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:19:28.436 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:19:29.049 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：BAD_USER_INPUT, 不符合实际结果:{'createScmMaterial': '93319a65-2a18-43ff-9ebf-2b5c72c434c0'}
+2023-08-14 22:19:31.248 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:19:31.895 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：BAD_USER_INPUT, 不符合实际结果:{'createScmMaterial': '618f7a60-1eaf-4028-96a0-119e3a41529f'}
+2023-08-14 22:19:34.914 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:19:35.548 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：BAD_USER_INPUT, 不符合实际结果:{'createScmMaterial': 'c71132c8-ca07-4acf-b681-4f14271a083b'}
+2023-08-14 22:19:37.867 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:19:38.473 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:19:45.885 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:19:46.572 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:19:48.827 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:19:49.426 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:47:54.527 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:47:55.188 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：createScmMaterial, 符合实际结果:{'createScmMaterial': 'a9541134-970b-4c2c-9f4e-9bf2ba68d181'}
+2023-08-14 22:47:57.523 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:47:58.178 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：BAD_USER_INPUT, 不符合实际结果:{'createScmMaterial': 'b0ef6b93-8830-4fe5-9fed-273f88e1614a'}
+2023-08-14 22:48:01.258 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:01.890 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:48:04.374 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:04.963 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:48:07.277 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:07.895 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：createScmMaterial, 不符合实际结果:BAD_USER_INPUT
+2023-08-14 22:48:10.165 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:10.787 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：BAD_USER_INPUT, 不符合实际结果:{'createScmMaterial': 'b3c0b734-4649-4d76-a119-610f847d23ac'}
+2023-08-14 22:48:13.131 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:13.718 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：BAD_USER_INPUT, 不符合实际结果:{'createScmMaterial': 'e69ab20f-de4a-4881-8a37-3aff4b9d6c0f'}
+2023-08-14 22:48:16.317 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:16.963 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：BAD_USER_INPUT, 不符合实际结果:{'createScmMaterial': 'bee39bdf-6b16-4d14-9b7c-dec7f2a0a6e4'}
+2023-08-14 22:48:19.607 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:20.223 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：BAD_USER_INPUT, 不符合实际结果:{'createScmMaterial': 'b1d2197b-8a34-44eb-bbcc-725a16adc084'}
+2023-08-14 22:48:22.474 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:23.063 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:48:26.355 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:27.009 | INFO     | scm_api.base_api:assert_actual:57 - 预期结果：BAD_USER_INPUT, 不符合实际结果:{'createScmMaterial': '59fbcde2-4d40-4cfc-a62d-d98735766c52'}
+2023-08-14 22:48:29.215 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:29.818 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:48:32.183 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:34.450 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:48:37.632 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:38.223 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:48:43.630 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:44.239 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:48:48.777 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:49.378 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:48:51.719 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:52.322 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:48:54.619 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:55.207 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:48:57.601 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:48:58.206 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:49:02.744 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:49:03.415 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:49:07.214 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:49:07.799 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:49:10.270 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:49:11.925 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:49:15.944 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:49:16.534 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:49:20.616 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:49:21.217 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-08-14 22:49:23.598 | INFO     | scm_api.material_api.test_material:test_create_material:45 - 894b1ca8-fe1a-4483-b4c7-229f21b6422e
+2023-08-14 22:49:24.207 | INFO     | scm_api.base_api:assert_actual:55 - 预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT

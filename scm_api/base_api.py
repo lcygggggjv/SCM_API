@@ -39,7 +39,8 @@ class Api:
             # 使用get（）和data"in 更准确
             actual = actual["data"]
         elif "errors" in actual and actual["errors"]:
-            actual = actual["errors"][0]["message"]
+            # actual = actual["errors"][0]["message"]
+            actual = actual["errors"][0]["extensions"]["code"]
         else:
             actual = actual["error"]["errors"][0]["message"]
 

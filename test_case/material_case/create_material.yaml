@@ -1,0 +1,330 @@
+
+# 新增物料用例. 多个用例 --- 分割
+
+# 新增成功  用例0
+
+data:
+  code: "code"
+  name: 'name'
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "createScmMaterial"
+
+---
+
+#  code为空, 预期应该是error，后端没限制  用例1
+data:
+  code: ""
+  name: 'name'
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+---
+
+# code为列表  用例2
+data:
+  code: [1,2,4]
+  name: 'name'
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+
+---
+
+# code为字典 用例3
+data:
+  code: {"1": 2}
+  name: 'name'
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+---
+
+# code为数值1 用例4
+data:
+  code: 1
+  name: 'name'
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "createScmMaterial"
+
+---
+
+# code为元组  用例5
+data:
+  code: (1,3)
+  name: 'name'
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+---
+
+# name为空, 预期应该是error，后端没限制  用例6
+data:
+  code: 'code'
+  name: ""
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+---
+
+#  编码超过20位  用例7
+data:
+  code: 'asvdqwe4555623566777762'
+  name: "name"
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+---
+
+#  名称超过60位  用例8
+data:
+  code: 'code'
+  name: "asvdqwe4555623566777762asvdqwe4555623566777762asvdqwe4555623566777762"
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+---
+
+#  名称字典形式  用例9
+data:
+  code: 'code'
+  name: {"d": 1}
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+---
+
+#  名称元组形式  用例10
+data:
+  code: 'code'
+  name: ("d",1)
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+---
+
+#  名称数值形式   用例11
+data:
+  code: 'code'
+  name: 1
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+---
+
+#  名称数值形式  用例12
+data:
+  code: 'code'
+  name: [12.4]
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+---
+
+#  物料类型为空，error  用例13
+data:
+  code: 'code'
+  name: "name"
+  category_id: "category_id"
+  material_type: ""
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+
+---
+
+#  物料类型随意字符串，error  用例14
+data:
+  code: 'code'
+  name: "name"
+  category_id: "category_id"
+  material_type: "xxxx"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+---
+
+#  物料类型随意数值  用例15
+data:
+  code: 'code'
+  name: "name"
+  category_id: "category_id"
+  material_type: 12
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+---
+
+#  物料类型随意字典  用例16
+data:
+  code: 'code'
+  name: "name"
+  category_id: "category_id"
+  material_type: {'sd':1}
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+---
+
+#  物料类型随意元组   用例17
+data:
+  code: 'code'
+  name: "name"
+  category_id: "category_id"
+  material_type: (1.2)
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+
+---
+
+#  物料类型随意列表    用例18
+data:
+  code: 'code'
+  name: "name"
+  category_id: "category_id"
+  material_type: ['sd':1]
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+
+---
+
+#  库存单位为空       用例19
+data:
+  code: 'code'
+  name: "name"
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: ""
+
+expected: "BAD_USER_INPUT"
+
+---
+
+#  库存单位不是正确的      用例20
+data:
+  code: 'code'
+  name: "name"
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "xxx"
+
+expected: "BAD_USER_INPUT"
+
+---
+
+#  库存单位列表类型      用例21
+data:
+  code: 'code'
+  name: "name"
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: ['12',1]
+
+expected: "BAD_USER_INPUT"
+
+---
+
+#  库存单位元组类型     用例22
+data:
+  code: 'code'
+  name: "name"
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: ('12',1)
+
+expected: "BAD_USER_INPUT"
+
+---
+
+#  库存单位字典类型    用例23
+data:
+  code: 'code'
+  name: "name"
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: {'12': 1}
+
+expected: "BAD_USER_INPUT"
+
+---
+
+#  库存单位int类型    用例24
+data:
+  code: 'code'
+  name: "name"
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: 1
+
+expected: "BAD_USER_INPUT"

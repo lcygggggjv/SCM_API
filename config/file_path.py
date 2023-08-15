@@ -15,7 +15,9 @@ class FilePath:
     # 根据项目分层路径  根路径/log/test_log 其他类推
     log_path = root_path / 'log' / 'test_log'   # 日志文件路径
 
-    material_path = root_path / 'test_case' / 'material_case' / 'material.yaml'
+    create_material_path = root_path / 'test_case' / 'material_case' / 'create_material.yaml'
+
+    update_material_path = root_path / 'test_case' / 'material_case' / 'update_material.yaml'
 
     postgres_db = dict(
                        user='postgres',

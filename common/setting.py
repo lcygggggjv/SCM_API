@@ -6,7 +6,42 @@ import pymysql
 
 
 """sink文件路径，level日志等级"""
-logger.add(sink=FilePath.log_path, encoding='utf-8', level='INFO')
+# logger.add(sink=FilePath.log_path, encoding='utf-8', level='INFO')
+
+import logging
+import colorlog
+
+# 创建一个logger对象
+logger = logging.getLogger('my_logger')
+logger.setLevel(logging.DEBUG)
+
+# 创建一个StreamHandler来输出到控制台
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.DEBUG)
+
+# 创建并设置颜色输出格式
+formatter = colorlog.ColoredFormatter(
+    '%(log_color)s%(asctime)s %(levelname)s: %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S',
+    log_colors={
+        'DEBUG': 'white',
+        'INFO': 'green',
+        'WARNING': 'yellow',
+        'ERROR': 'red',
+        'CRITICAL': 'red,bg_white',
+    }
+)
+console_handler.setFormatter(formatter)
+
+# 将StreamHandler添加到logger中
+logger.addHandler(console_handler)
+
+# 示例断言
+assert 1 == 2, "断言失败"
+
+# 记录断言失败的日志
+logger.error("断言失败")
+
 
 
 class ConnectMysql:

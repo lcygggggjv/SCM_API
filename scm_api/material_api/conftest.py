@@ -1,4 +1,8 @@
 import pytest
+import requests
+
+from common.mock import Mock
+from config.read_env import EnvironMent
 from scm_api.base_api import Api
 
 
@@ -19,21 +23,12 @@ def get_data():
     unit_id = api.get_unit()
     signal = api.get_signal()
 
-    yield cate_id, unit_id, signal
+    create_id = api.get_create_material_id()
+    yield cate_id, unit_id, signal, create_id
 
 
-def test_get_data(get_token):
+if __name__ == '__main__':
 
-    print(get_token)
-
-
-# @pytest.fixture()
-# def tz_1():
-#
-#     print(1)
-#
-#
-# def test_1(tz_1):
-#
-#     print(tz_1)
+    token = get_token
+    print(token)
 

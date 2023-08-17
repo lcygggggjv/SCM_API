@@ -1,13 +1,17 @@
 
 import yaml
 import requests
+from colorama import init, Fore
+from common.mock import Mock
 from config.read_env import EnvironMent
 from config.file_path import FilePath
 from common.setting import logger
 
+
 class Api:
 
     env = EnvironMent()
+    mock = Mock()
 
     @classmethod
     def login_token(cls):
@@ -46,6 +50,9 @@ class Api:
 
         return actual
 
+    # 初始化 colorama
+    init()
+
     @staticmethod
     def assert_actual(expected, actual):
 
@@ -54,8 +61,10 @@ class Api:
 
             logger.info(f"预期结果：{expected}, 符合实际结果:{actual}")
         except AssertionError:
-            logger.info(f"预期结果：{expected}, 不符合实际结果:{actual}")
-            raise AssertionError(f"预期结果：{expected} 不符合实际结果：{actual}")
+            error_msg = f"预期结果：{expected}, 不符合实际结果:{actual}"
+            # 使用Fore.RED来设置红色文本，在不符合预期的日志中使用此设置。Fore.RESET用于重置颜色设置，以避免后续日志继续保持红色
+            logger.error(error_msg)
+            raise AssertionError(error_msg)
 
     @classmethod
     def read_yaml(cls, yaml_path):
@@ -138,11 +147,44 @@ class Api:
 
         return actual['data']['scmMaterialCategoryList'][0]['id']
 
+    @classmethod
+    def get_create_material_id(cls):
+
+        res = requests.post(url=cls.env.get_env_url() + 'createScmMaterial',
+                            headers={"Authorization": f"bearer {cls.login_token()}"},
+                            json={
+                                "operationName": "createScmMaterial",
+                                "variables": {
+                                    "input": {
+                                        "category": {
+                                            "id": "680ba59a-202c-4ff4-b8a5-d71af0f4e40a"
+                                        },
+                                        "figureNo": cls.mock.ran_py_str(),
+                                        "inventoryUnit": {
+                                            "id": "dc083f4b-7ebe-43ee-b837-aa8342f13d38"
+                                        },
+                                        "materialQuality": cls.mock.ran_py_str(),
+                                        "materialSignal": {
+                                            "id": "5f17aaf6-4973-437d-9f8a-f75902cbe2a2"
+                                        },
+                                        "materialType": "PURCHASE",
+                                        "model": cls.mock.ran_py_str(),
+                                        "name": cls.mock.ran_py_str(),
+                                        "no": cls.mock.ran_py_str(),
+                                        "specification": cls.mock.ran_py_str()
+                                    }
+                                },
+                                "query": "mutation createScmMaterial($input: CreateScmMaterialInput!) "
+                                         "{\n  createScmMaterial(input: $input)\n}"
+                            })
+
+        actual = res.json()
+        return actual["data"]["createScmMaterial"]
+
 
 if __name__ == '__main__':
 
     ao = Api()
-    ox = ao.login_token()
-    path = FilePath()
-    gxc = ao.read_yaml(path.material_path)
-    print(gxc)
+    ox = ao.get_create_material_id()
+
+    print(ox)

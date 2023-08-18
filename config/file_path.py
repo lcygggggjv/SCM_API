@@ -13,7 +13,7 @@ class FilePath:
     root_path = config_path.parent    # 根路径
 
     # 根据项目分层路径  根路径/log/test_log 其他类推
-    log_path = root_path / 'log' / 'test_log'   # 日志文件路径
+    log_path = root_path / 'log' / 'test.log'   # 日志文件路径
 
     create_material_path = root_path / 'test_case' / 'material_case' / 'create_material.yaml'
 

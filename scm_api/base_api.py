@@ -1,7 +1,6 @@
 
 import yaml
 import requests
-from colorama import init, Fore
 from common.mock import Mock
 from config.read_env import EnvironMent
 from config.file_path import FilePath
@@ -50,8 +49,8 @@ class Api:
 
         return actual
 
-    # 初始化 colorama
-    init()
+    # # 初始化 colorama
+    # init()
 
     @staticmethod
     def assert_actual(expected, actual):
@@ -59,10 +58,9 @@ class Api:
         try:
             assert expected in actual
 
-            logger.info(f"预期结果：{expected}, 符合实际结果:{actual}")
+            logger.info(f"断言成功：预期结果：{expected}, 符合实际结果:{actual}")
         except AssertionError:
-            error_msg = f"预期结果：{expected}, 不符合实际结果:{actual}"
-            # 使用Fore.RED来设置红色文本，在不符合预期的日志中使用此设置。Fore.RESET用于重置颜色设置，以避免后续日志继续保持红色
+            error_msg = f"断言失败：预期结果：{expected}, 不符合实际结果:{actual}"
             logger.error(error_msg)
             raise AssertionError(error_msg)
 

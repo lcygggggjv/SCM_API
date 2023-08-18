@@ -52,7 +52,6 @@ if __name__ == '__main__':
     LogColor.debug("debug日志")
 
 
-
 class ConnectMysql:
     """DictCursor是用于设置pymysql游标的类，它指定了返回结果的格式为字典类型。
     使用DictCursor可以将查询结果以字典的形式返回，其中列名作为键，对应的值作为值。

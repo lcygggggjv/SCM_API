@@ -1,0 +1,48 @@
+
+# 删除用例
+
+data:
+
+  id: "id"
+
+expected: "deleteScmMaterial"
+
+
+---
+
+data:
+
+  id: ""
+
+expected: "BAD_USER_INPUT"
+
+---
+data:
+
+  id: {d}
+
+expected: "BAD_USER_INPUT"
+
+---
+
+data:
+
+  id: (1)
+
+expected: "BAD_USER_INPUT"
+
+---
+
+data:
+
+  id: [1]
+
+expected: "BAD_USER_INPUT"
+
+---
+
+data:
+
+  id: 'cxchjdhsd'
+
+expected: "BAD_USER_INPUT"

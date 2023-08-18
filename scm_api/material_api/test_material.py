@@ -17,9 +17,12 @@ class TestMaterial(Api):
 
     """读取yaml文件测试数据"""
     yaml = FilePath()
+    # 新增物料用例
     create_cases = Api.read_yaml(yaml.create_material_path)
-
+    # 编辑物料用例
     update_cases = Api.read_yaml(yaml.update_material_path)
+    # 删除物料用例
+    delete_cases = Api.read_yaml(yaml.delete_material_path)
 
     @allure.title('新增物料全部用例')
     @pytest.mark.parametrize("case", create_cases)
@@ -130,4 +133,31 @@ class TestMaterial(Api):
         expected = up_case['expected']
 
         actual = self.review_actual(resp)
+        self.assert_actual(expected, actual)
+
+    @allure.title('删除物料全部用例')
+    @pytest.mark.parametrize("delete_case", delete_cases)
+    def test_delete_material(self, get_token, delete_case, get_data):
+        # 设置默认值
+        create_id = None
+
+        if delete_case["data"]["id"] == "id":
+            create_id = Api.get_create_material_id()
+
+        res = requests.post(url=self.url + 'deleteScmMaterial',
+                            headers={"Authorization": f"bearer {get_token}"},
+                            json={
+                              "operationName": "deleteScmMaterial",
+                              "variables": {
+                                "ids": [
+                                  create_id
+                                ]
+                              },
+                              "query": "mutation deleteScmMaterial($ids: [String!]!) "
+                                       "{\n  deleteScmMaterial(ids: $ids) {\n    isUsed\n    __typename\n  }\n}"
+                            })
+        resp = res.json()
+
+        actual = self.review_actual(resp)
+        expected = delete_case["expected"]
         self.assert_actual(expected, actual)

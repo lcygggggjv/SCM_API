@@ -19,6 +19,8 @@ class FilePath:
 
     update_material_path = root_path / 'test_case' / 'material_case' / 'update_material.yaml'
 
+    delete_material_path = root_path / 'test_case' / 'material_case' / 'delete_material.yaml'
+
     postgres_db = dict(
                        user='postgres',
                        password='postgres',

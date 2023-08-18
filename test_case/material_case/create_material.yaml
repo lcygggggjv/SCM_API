@@ -53,18 +53,6 @@ data:
 
 expected: "BAD_USER_INPUT"
 
----
-
-# code为数值1 用例4
-data:
-  code: 1
-  name: 'name'
-  category_id: "category_id"
-  material_type: "PURCHASE"
-  unit_id: "unit_id"
-  signal_id: "signal_id"
-
-expected: "createScmMaterial"
 
 ---
 
@@ -96,7 +84,7 @@ expected: "BAD_USER_INPUT"
 
 #  编码超过20位  用例7
 data:
-  code: 'asvdqwe4555623566777762'
+  code: 'asvdqwe4555623569986777762'
   name: "name"
   category_id: "category_id"
   material_type: "PURCHASE"

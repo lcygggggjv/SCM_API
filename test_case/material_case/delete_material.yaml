@@ -19,7 +19,7 @@ expected: "BAD_USER_INPUT"
 ---
 data:
 
-  id: {d}
+  id: {'d': 2}
 
 expected: "BAD_USER_INPUT"
 
@@ -27,7 +27,8 @@ expected: "BAD_USER_INPUT"
 
 data:
 
-  id: (1)
+  id:
+   - (1)
 
 expected: "BAD_USER_INPUT"
 

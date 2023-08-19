@@ -41,7 +41,8 @@ expected: "BAD_USER_INPUT"
 #  名称字典形式  用例3
 data:
 
-  name: {'d': 1}
+  name:
+    dicts: 1
   category_id: "category_id"
   material_type: "PURCHASE"
   unit_id: "unit_id"
@@ -54,7 +55,8 @@ expected: "BAD_USER_INPUT"
 #  名称元组形式  用例4
 data:
 
-  name: ("d",1)
+  name:
+    - ("d",1)
   category_id: "category_id"
   material_type: "PURCHASE"
   unit_id: "unit_id"
@@ -80,7 +82,7 @@ expected: "BAD_USER_INPUT"
 #  名称数值形式  用例12
 data:
 
-  name: [12.4]
+  name: ['12',4]
   category_id: "category_id"
   material_type: "PURCHASE"
   unit_id: "unit_id"
@@ -135,7 +137,8 @@ data:
 
   name: "name"
   category_id: "category_id"
-  material_type: {'sd':1}
+  material_type:
+    dict1: 'sd'
   unit_id: "unit_id"
   signal_id: "signal_id"
 
@@ -148,7 +151,8 @@ data:
 
   name: "name"
   category_id: "category_id"
-  material_type: (1.2)
+  material_type:
+    - (1.2)
   unit_id: "unit_id"
   signal_id: "signal_id"
 
@@ -217,7 +221,8 @@ data:
   category_id: "category_id"
   material_type: "PURCHASE"
   unit_id: "unit_id"
-  signal_id: ('12',1)
+  signal_id:
+    ('12',1)
 
 expected: "BAD_USER_INPUT"
 

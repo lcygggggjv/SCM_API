@@ -56,9 +56,23 @@ expected: "BAD_USER_INPUT"
 
 ---
 
+# code为字典 用例4
+data:
+  code: null
+  name: 'name'
+  category_id: "category_id"
+  material_type: "PURCHASE"
+  unit_id: "unit_id"
+  signal_id: "signal_id"
+
+expected: "BAD_USER_INPUT"
+
+---
+
 # code为元组  用例5
 data:
-  code: (1,3)
+  code:
+    - (1,3)
   name: 'name'
   category_id: "category_id"
   material_type: "PURCHASE"
@@ -124,7 +138,8 @@ expected: "BAD_USER_INPUT"
 #  名称元组形式  用例10
 data:
   code: 'code'
-  name: ("d",1)
+  name:
+    - ("d",1)
   category_id: "category_id"
   material_type: "PURCHASE"
   unit_id: "unit_id"
@@ -218,7 +233,8 @@ data:
   code: 'code'
   name: "name"
   category_id: "category_id"
-  material_type: (1.2)
+  material_type:
+    - (1.2)
   unit_id: "unit_id"
   signal_id: "signal_id"
 
@@ -287,7 +303,8 @@ data:
   category_id: "category_id"
   material_type: "PURCHASE"
   unit_id: "unit_id"
-  signal_id: ('12',1)
+  signal_id:
+    - ('12',1)
 
 expected: "BAD_USER_INPUT"
 

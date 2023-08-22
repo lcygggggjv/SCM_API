@@ -11,11 +11,11 @@ pytest.main()
 # pytest.main(['-s', '-v', FilePath.create_material_api_path])
 
 # os.path.dirname 获取当前文件的所在目录，前面所有级目录
-root_path = os.path.dirname(os.path.abspath(__file__))
-
-ini_path = os.path.join(root_path, 'config', 'env.ini')
-
-config_parser = configparser.ConfigParser()
-
-config_parser.read(ini_path, encoding='utf-8')
+# root_path = os.path.dirname(os.path.abspath(__file__))
+#
+# ini_path = os.path.join(root_path, 'config', 'env.ini')
+#
+# config_parser = configparser.ConfigParser()
+#
+# config_parser.read(ini_path, encoding='utf-8')
 

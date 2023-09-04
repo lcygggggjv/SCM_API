@@ -14,7 +14,9 @@ JOB_URL = sys.argv[1]
 JOB_NAME = sys.argv[2]
 
 # 获取当前系统时间 
-current_time = datetime.datetime.now()
+times = datetime.datetime.now()
+current_time = times.strftime('%Y-%m-%d %H:%M:%S')
+
 # 飞书机器人的webhook地址
 url = 'https://open.feishu.cn/open-apis/bot/v2/hook/f56721a6-3fff-46ab-89a9-ed478f6d29bc'
 method = 'post'
@@ -40,7 +42,7 @@ data = {
                     "content": "查看测试报告",  # 这是卡片的按钮，点击可以跳转到url指向的allure路径
                     "tag": "lark_md"
                 },
-                "url": f"{JOB_URL}/allure/",  # JOB_URL 调用python定义的变量，该url是服务器下的allure路径
+                "url": f"{JOB_URL}allure/",  # JOB_URL 调用python定义的变量，该url是服务器下的allure路径
                 "type": "default",
                 "value": {}
             }],

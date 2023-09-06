@@ -32,7 +32,8 @@ data = {
         "elements": [{
             "tag": "div",
             "text": {
-                "content": f"【测试完毕】{current_time}",  # 这是卡片的内容，也可以添加其他的内容：比如构建分支，构建编号等
+                "content": f"【测试完毕】"
+                           f"完成时间:{current_time}",  # 这是卡片的内容，也可以添加其他的内容：比如构建分支，构建编号等
                 "tag": "lark_md"
             }
         }, {

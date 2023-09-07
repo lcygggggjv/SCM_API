@@ -1,10 +1,4 @@
-# -*- encoding: utf-8 -*-
-"""
-@Author  : liyinchi
-@File    : feishu.py
-@Time    : 2022/4/30
-@Remark :飞书通知
-"""
+
 import sys
 import requests
 import datetime
@@ -12,8 +6,9 @@ import datetime
 # 定义python系统变量
 JOB_URL = sys.argv[1]
 JOB_NAME = sys.argv[2]
+BUILD_NUMBER = sys.argv[3]
 
-# 获取当前系统时间 
+# 获取当前系统时间
 times = datetime.datetime.now()
 current_time = times.strftime('%Y-%m-%d %H:%M:%S')
 
@@ -32,7 +27,9 @@ data = {
         "elements": [{
             "tag": "div",
             "text": {
-                "content": f"【测试完毕】"
+                "content": f"项目名称: {JOB_NAME}" +
+                           f"测试进度: 测试完成" +
+                           f"构建次数: {BUILD_NUMBER}" +
                            f"完成时间:{current_time}",  # 这是卡片的内容，也可以添加其他的内容：比如构建分支，构建编号等
                 "tag": "lark_md"
             }

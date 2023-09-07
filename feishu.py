@@ -27,16 +27,31 @@ data = {
         "elements": [{
             "tag": "div",
             "text": {
-                "content": f"项目名称: {JOB_NAME}"
-                           
-                           f"测试进度: 测试完成"
-                           
-                           f"构建次数: {BUILD_NUMBER}"
-                           
-                           f"完成时间:{current_time}",  # 这是卡片的内容，也可以添加其他的内容：比如构建分支，构建编号等
+                "content": f"项目名称: {JOB_NAME}",  # 这是卡片的内容，也可以添加其他的内容：比如构建分支，构建编号等
                 "tag": "lark_md"
             }
         }, {
+            "tag": "div",
+            "text": {
+                "content": "测试进度: 测试完成",
+                "tag": "lark_md"
+            }
+        },
+            {
+            "tag": "div",
+            "text": {
+                "content": f"构建次数: {BUILD_NUMBER}",
+                "tag": "lark_md"
+            }
+        },
+            {
+            "tag": "div",
+            "text": {
+                "content": f"完成时间:{current_time}",
+                "tag": "lark_md"
+            }
+        },
+            {
             "actions": [{
                 "tag": "button",
                 "text": {

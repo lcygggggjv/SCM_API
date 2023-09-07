@@ -47,7 +47,7 @@ data = {
             {
             "tag": "div",
             "text": {
-                "content": f"完成时间:{current_time}",
+                "content": f"完成时间: {current_time}",
                 "tag": "lark_md"
             }
         },

@@ -749,3 +749,53 @@
 2023-09-08 00:48:40.922 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
 2023-09-08 00:48:45.461 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
 2023-09-08 00:48:48.992 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:36:18.095 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：createScmMaterial, 符合实际结果:{'createScmMaterial': 'fee10c33-e377-4909-8480-70691fbdce1a'}
+2023-09-08 01:36:23.935 | ERROR    | scm_api.base_api:assert_actual:64 - 断言失败：预期结果：BAD_USER_INPUT, 不符合实际结果:{'createScmMaterial': '2ea4dd6f-b51a-422f-ae09-284228049b5a'}
+2023-09-08 01:36:28.105 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:36:35.208 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:36:39.175 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:36:43.675 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:36:48.803 | ERROR    | scm_api.base_api:assert_actual:64 - 断言失败：预期结果：BAD_USER_INPUT, 不符合实际结果:{'createScmMaterial': '89ed3ce1-bc73-46a9-a9e7-2fe68b5b2aa9'}
+2023-09-08 01:36:53.653 | ERROR    | scm_api.base_api:assert_actual:64 - 断言失败：预期结果：BAD_USER_INPUT, 不符合实际结果:{'createScmMaterial': '9d96ab74-e9b1-4cac-8629-4712773eec5a'}
+2023-09-08 01:36:58.725 | ERROR    | scm_api.base_api:assert_actual:64 - 断言失败：预期结果：BAD_USER_INPUT, 不符合实际结果:{'createScmMaterial': '92ec0e1e-ff67-4d5a-82be-7e6fd3fbb581'}
+2023-09-08 01:37:03.255 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:37:07.585 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:37:12.066 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:37:16.515 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:37:20.647 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:37:24.685 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:37:28.995 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:37:33.962 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:37:38.487 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:37:42.520 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:37:46.739 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:37:50.825 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:37:55.138 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:38:14.585 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:38:18.566 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:38:22.815 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:38:28.085 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：updateScmMaterial, 符合实际结果:{'updateScmMaterial': True}
+2023-09-08 01:38:33.166 | ERROR    | scm_api.base_api:assert_actual:64 - 断言失败：预期结果：BAD_USER_INPUT, 不符合实际结果:{'updateScmMaterial': True}
+2023-09-08 01:38:38.115 | ERROR    | scm_api.base_api:assert_actual:64 - 断言失败：预期结果：BAD_USER_INPUT, 不符合实际结果:{'updateScmMaterial': True}
+2023-09-08 01:38:42.955 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:38:47.823 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:38:52.825 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:38:57.807 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:39:02.805 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:39:07.756 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:39:12.748 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:39:17.718 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:39:24.731 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:39:31.097 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:39:36.425 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:39:41.415 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:39:46.396 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:39:51.495 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:39:57.946 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:40:02.987 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:40:07.623 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：deleteScmMaterial, 符合实际结果:{'deleteScmMaterial': {'isUsed': 0, '__typename': 'ScmDeleteResult'}}
+2023-09-08 01:40:11.076 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:40:14.490 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:40:17.925 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:40:21.805 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT
+2023-09-08 01:40:25.286 | INFO     | scm_api.base_api:assert_actual:61 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果:BAD_USER_INPUT

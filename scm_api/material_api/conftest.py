@@ -1,8 +1,4 @@
 import pytest
-import requests
-
-from common.mock import Mock
-from config.read_env import EnvironMent
 from scm_api.base_api import Api
 
 
@@ -10,9 +6,9 @@ from scm_api.base_api import Api
 def get_token():
 
     api = Api()
-    token = api.login_token()
+    tokens = api.login_token()
 
-    yield token
+    yield tokens
 
 
 @pytest.fixture()
@@ -31,4 +27,3 @@ if __name__ == '__main__':
 
     token = get_token
     print(token)
-

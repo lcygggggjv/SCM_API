@@ -137,7 +137,7 @@ class TestMaterial(Api):
 
     @allure.title('删除物料全部用例')
     @pytest.mark.parametrize("delete_case", delete_cases)
-    def test_delete_material(self, get_token, delete_case, get_data):
+    def test_delete_material(self, get_token, delete_case):
         # 设置默认值
         create_id = None
 

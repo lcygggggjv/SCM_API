@@ -3,7 +3,6 @@ import yaml
 import requests
 from common.mock import Mock
 from config.read_env import EnvironMent
-from config.file_path import FilePath
 from common.setting import logger
 
 
@@ -49,18 +48,15 @@ class Api:
 
         return actual
 
-    # # 初始化 colorama
-    # init()
-
     @staticmethod
     def assert_actual(expected, actual):
 
         try:
             assert expected in actual
 
-            logger.info(f"断言成功：预期结果：{expected}, 符合实际结果:{actual}")
+            logger.info(f"断言成功：预期结果：{expected}, 符合实际结果：{actual}")
         except AssertionError:
-            error_msg = f"断言失败：预期结果：{expected}, 不符合实际结果:{actual}"
+            error_msg = f"断言失败：预期结果：{expected}, 不符合实际结果：{actual}"
             logger.error(error_msg)
             raise AssertionError(error_msg)
 

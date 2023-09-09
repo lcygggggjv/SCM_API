@@ -7,7 +7,7 @@ def read_excel(file_path, sheet_name='Sheet1'):
 
     work_book = openpyxl.load_workbook(file_path)
 
-    # 类型注解， sheet类型
+    # 类型注解， Worksheet类型
     sheet: Worksheet = work_book[sheet_name]
 
     data = list(sheet.values)

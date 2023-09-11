@@ -1,0 +1,11 @@
+
+data:
+  code: "code"
+  name: 'name'
+  srm_status: "NORMAL"
+  wms_status: "NORMAL"
+
+expected: "createScmMaterialSignal"
+
+
+---

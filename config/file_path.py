@@ -6,7 +6,7 @@ from pymysql.cursors import DictCursor
 
 class FilePath:
 
-    base_dir = os.path.dirname(os.path.abspath(__file__))
+    base_dir = os.path.dirname(os.path.abspath(__file__))  # 当前文件的父级 绝对路径
 
     config_path = pathlib.Path(__file__).absolute().parent   # 当前文件目录的父级 就是config
 
@@ -15,11 +15,11 @@ class FilePath:
     # 根据项目分层路径  根路径/log/test_log 其他类推
     log_path = root_path / 'log' / 'test.log'   # 日志文件路径
 
-    create_material_path = root_path / 'test_case' / 'material_case' / 'create_material.yaml'       # 新增物料测试用例路径
-    update_material_path = root_path / 'test_case' / 'material_case' / 'update_material.yaml'       # 编辑物料测试用例路径
-    delete_material_path = root_path / 'test_case' / 'material_case' / 'delete_material.yaml'       # 删除物料测试用例路径
+    create_material_path = root_path / 'test_case' / 'material_case' / 'material_data_cases' / 'create_material.yaml'
+    update_material_path = root_path / 'test_case' / 'material_case' / 'material_data_cases' / 'update_material.yaml'
+    delete_material_path = root_path / 'test_case' / 'material_case' / 'material_data_cases' / 'delete_material.yaml'
 
-    create_material_api_path = root_path / 'scm_api' / 'material_api' / 'test_material.py'         # 新增的物料测试函数
+    create_material_api_path = root_path / 'scm_api' / 'material_api' / 'test_material.py'
 
     postgres_db = dict(
                        user='postgres',
@@ -45,4 +45,4 @@ class FilePath:
 if __name__ == '__main__':
 
     path = FilePath()
-    print(path.create_material_api_path)
+    print(path.create_material_path)

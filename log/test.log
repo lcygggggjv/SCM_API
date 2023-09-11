@@ -1356,3 +1356,4 @@
 2023-09-10 22:49:21.586 | INFO     | scm_api.base_api:assert_actual:57 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果：BAD_USER_INPUT
 2023-09-10 22:49:22.202 | INFO     | scm_api.base_api:assert_actual:57 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果：BAD_USER_INPUT
 2023-09-10 22:49:22.788 | INFO     | scm_api.base_api:assert_actual:57 - 断言成功：预期结果：BAD_USER_INPUT, 符合实际结果：BAD_USER_INPUT
+2023-09-11 08:32:39.699 | INFO     | scm_api.base_api:assert_actual:57 - 断言成功：预期结果：createScmMaterial, 符合实际结果：{'createScmMaterial': '178171b2-b2a1-4b0b-b62d-d825b0777a39'}
